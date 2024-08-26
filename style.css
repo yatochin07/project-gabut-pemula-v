@@ -1,0 +1,105 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Silkscreen", cursive;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+:root {
+--bg-primary: blue;
+--bg-secondary: #eaeaea;
+--txt-primary: #f7f7f7;
+--txt-secondary: #222;
+--icons-primary:tomato;
+--icons-secondary: blue;
+--icons-third: rgb(24, 214, 24);
+
+
+}
+
+.container {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.card {
+    width: 40%;
+    border: 1px solid var(--txt-secondary);
+    background-color: var(--bg-secondary);
+    padding: 32px;
+    margin: 8px;
+    color: var(--txt-secondary);
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);
+}
+
+.text-center {
+    text-align: center;
+
+}
+
+.tittle {
+    font-size: 2em;
+}
+
+.icons {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    color: var(--icons-primary);
+
+}
+
+.icons-2 {
+    font-size: 24px;
+    color: var(--icons-secondary)
+}
+
+.icons-3 {
+    font-size: 24px;
+    color: var(--icons-third);
+}
+
+
+.description {
+    margin-top: 8px;
+    font-size: .5em;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 8px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color : var(--txt-primary);
+    border-color: var(--txt-primary);
+    cursor: auto;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+    }
+
+    @media screen and (max-width: 500px) {
+        
+        .card {
+            width: 100%;
+        }
+    }   

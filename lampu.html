@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+    <!-- ini adalah cetrekan lampu pemula hehe -->
+    <div class="container-navbar">
+        <ul class="ul-navbar">
+            <li class="li-navbar">
+                <a href="index.HTML" class="a-navbar"> KEMBALI KE HALAMAN UTAMA</a>
+            </li>
+        </ul>
+    </div>
+
+    <h1 class="hehe">INI ADALAH CETREKAN LAMPU PEMULA HEHE</h1>
+    <div class="lampu-off">
+       
+        <img src="assets/image/lampu off.png" alt="" id="lampu1"/>
+    </div>
+    <div class="button">
+        <button onclick="saklar('on')">NYALAKAN LAMPU</button>
+        <button onclick="saklar('off')">MATIKAN LAMPU</button>
+    </div>
+
+    <!-- ini javascriptnya -->
+
+    <script>
+        function saklar(params) {
+            console.log(params)
+            let lampu1 = document.getElementById("lampu1") ;
+            
+            if (params == "on") {
+                lampu1.src = "assets/image/lampu on.png"
+            }
+
+            if (params == "off") {
+                lampu1.src = "assets/image/lampu off.png"
+            }
+            
+            return lampu1;
+        }
+    </script>
+
+</body>
+
+</html>
